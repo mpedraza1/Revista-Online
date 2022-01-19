@@ -1,0 +1,30 @@
+@mixin relative-converter($property, $unit, $target, $context){
+    $result: calc($target/$context);
+
+    #{$property}: #{result + $unit};
+
+}
+
+@mixin respond-to ($breakpoint){
+    $raw-query: map-get($breakpoints, $breakpoint);
+
+    @if $raw-query{
+        $query:if(
+            type-of($raw-query)=='string',
+            unquote($raw-query),
+            inspect($raw-query)
+        );
+
+        @media #{$query}{
+            @content;
+        }
+    } 
+    
+    @else {
+        @error 'No value found for `#{$breakpoint}´ .' + 'please make sure it is defined in {$breakpoint} map.';
+
+    }
+
+
+
+}

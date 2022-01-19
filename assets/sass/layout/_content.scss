@@ -1,0 +1,32 @@
+
+.contenedor {
+  &__d-none-mobile {
+  }
+}
+.content-barra-cabecera {
+  border-bottom: 1px solid $gray;
+}
+.content-barra-lateral {
+}
+.content {
+  &__tags {
+    border-bottom: 2px solid $gray;
+    padding-bottom: 1rem;
+   
+  }
+button{
+    background-color: green;
+    
+}
+  
+.content-noticias {
+  &__destacadas-item {
+      
+  }
+ 
+}
+.img{
+    width: 15rem;
+    height: 15rem;
+}
+}

@@ -1,0 +1,24 @@
+.newsletter {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+  
+  &__title {
+     font-size: x-large;
+     display: flex;
+    justify-content: center;
+     
+}
+.input{
+  display: flex;
+  justify-content: center;
+
+}
+.button--color{
+  background-color:orange;
+}
+p{
+  display: flex;
+  justify-content: center;
+}
+}

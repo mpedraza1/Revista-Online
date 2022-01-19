@@ -1,0 +1,154 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+.menu__logo {
+  font-size: resultrem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content__cabecera h2 {
+  font-size: resultrem;
+}
+.content__cuerpo {
+  font-size: resultrem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  border-bottom: 1px solid gray;
+  padding: 1% 0;
+  margin: 0 1%;
+}
+.menu__logo {
+  grid-column: 1/span 1;
+  padding-left: 5%;
+  font-size: x-large;
+}
+.menu__nav {
+  grid-column: 2/span 1;
+}
+.menu__group {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5%;
+}
+.menu__group_input--menu {
+  border-radius: 30px;
+  width: 100%;
+}
+.menu__group--item {
+  text-decoration: none;
+  grid-column: auto/span 1;
+  text-align: center;
+}
+
+.content-barra-cabecera {
+  border-bottom: 1px solid gray;
+}
+
+.content__tags {
+  border-bottom: 2px solid gray;
+  padding-bottom: 1rem;
+}
+.content button {
+  background-color: green;
+}
+.content .img {
+  width: 15rem;
+  height: 15rem;
+}
+
+@media (min-width: 768px) {
+  .container__d-none-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    grid-template-columns: 5fr 2fr;
+  }
+}
+@media (min-width: 768px) {
+  .menu__group {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+@media (min-width: 768px) {
+  .menu__logo {
+    padding-left: 0%;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 4%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 768px) {
+  .content__contenedor-noticias {
+    grid-column: 1/span 1;
+  }
+}
+@media (min-width: 768px) {
+  .content__list-noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 0% 4%;
+    padding-left: 7%;
+  }
+}
+@media (min-width: 992px) {
+  .content__list-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0% 4%;
+    padding-left: 7%;
+  }
+}
+
+.newsletter {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+.newsletter__title {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+.newsletter .input {
+  display: flex;
+  justify-content: center;
+}
+.newsletter .button--color {
+  background-color: orange;
+}
+.newsletter p {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

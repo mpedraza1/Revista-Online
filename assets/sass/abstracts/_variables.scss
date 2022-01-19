@@ -1,0 +1,35 @@
+//colores
+
+$gray: gray ;
+$steelblue: steelblue;
+$white: white;
+$whiteNot:#f2f4f5;
+
+//fuentes
+
+$tipografia: monospace;
+
+//font size
+
+$textLarge:24;
+$textNormal:13;
+
+//estilos
+
+$bold:700;
+$regular:400;
+
+//diagramacion
+
+$wiewportWidth:100%;
+$widthNews:32%;
+$padding5:5px;
+$padding10:1%;
+
+//breakpoints
+
+$breakpoints:(
+    'medium':(min-width:768px),
+    'large':(min-width:992px),
+    'huge':(min-width:1200px),
+);
